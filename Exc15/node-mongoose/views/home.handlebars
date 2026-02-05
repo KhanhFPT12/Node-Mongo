@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<p>{{message}}</p>
+
+<h2>Latest News</h2>
+
+{{#each articles}}
+  {{> article}}
+{{else}}
+  <p>No articles found</p>
+{{/each}}

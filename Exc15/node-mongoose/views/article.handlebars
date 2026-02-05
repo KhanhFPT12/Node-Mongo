@@ -1,0 +1,17 @@
+<h2>{{article.title}}</h2>
+
+<p>
+  Published: {{formatDate article.date}}
+</p>
+
+<p>
+  {{article.text}}
+</p>
+
+<h3>Comments</h3>
+
+{{#each article.comments}}
+  <p>- {{this.body}}</p>
+{{else}}
+  <p>No comments yet</p>
+{{/each}}

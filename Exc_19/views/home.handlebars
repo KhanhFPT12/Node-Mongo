@@ -1,0 +1,11 @@
+<h2>Welcome to the News Website</h2>
+<p>Latest news updated daily</p>
+<h2>Latest News</h2>
+
+<ul>
+  {{#each articles}}
+    <li>
+      <strong>{{title}}</strong> - {{author}} - {{formatDate date}}
+    </li>
+  {{/each}}
+</ul>
